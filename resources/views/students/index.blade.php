@@ -105,7 +105,7 @@
 
                 @forelse($students as $student)
 <tr>
-    <td>{{ $student->id }}</td>
+    <td>{{ $students->firstItem() + $loop->index }}</td>
 
     <td>
         <div class="fw-semibold">{{ $student->name }}</div>
